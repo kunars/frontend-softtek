@@ -1,6 +1,7 @@
 import { ReactNode, useMemo, useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 import { Icon } from '@/elements/atoms';
 
@@ -30,7 +31,7 @@ export const Stepper = ({ steps, step = 0, onPrev }: Props) => {
         ></div>
       </div>
     );
-  }, [currentStep]);
+  }, [currentStep, steps.length]);
 
   return (
     <div>

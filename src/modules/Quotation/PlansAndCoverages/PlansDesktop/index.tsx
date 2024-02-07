@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 import { CardPlan } from '@/elements/molecules';
 import { Plan } from '@/interfaces';
 
@@ -10,15 +8,9 @@ type Props = {
 };
 
 export const PlansDesktop = ({ plans, quoteId, onSelect }: Props) => {
-  const [list, setList] = useState<Plan[]>([]);
-
-  useEffect(() => {
-    setList([...plans]);
-  }, [plans]);
-
   return (
     <div className="col-span-full justify-between gap-8 mt-5 hidden lg:flex xl:col-span-10 xl:col-start-2">
-      {list.map((_) => (
+      {plans.map((_) => (
         <CardPlan
           key={`desk-${_.name}`}
           plan={_}

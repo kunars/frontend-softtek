@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
 
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Controller, useForm } from 'react-hook-form';
 
-import { Checkbox, Dropdown, DropdownItem } from '@/elements/molecules';
-import { Input, Icon } from '@/elements/atoms';
 import { LIST_DOCUMENT_TYPE } from '@/constants';
 import { useGeneralContext } from '@/context';
+import { Input, Icon } from '@/elements/atoms';
+import { Checkbox, Dropdown, DropdownItem } from '@/elements/molecules';
 import { useAuthService } from '@/services';
 
 type FormProps = {

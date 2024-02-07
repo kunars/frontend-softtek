@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import { Divider } from '@/elements/particles';
 import { Tag } from '@/elements/atoms';
 import { GridWrapper } from '@/elements/organisms';
+import { Divider } from '@/elements/particles';
 import { Form } from '@/modules/Home';
 
 const HomePage = () => {

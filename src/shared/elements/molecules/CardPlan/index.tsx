@@ -14,7 +14,7 @@ export const CardPlan = ({ plan, quoteId, onSelect }: Props) => {
   const getPrice = useMemo(() => {
     const discount = quoteId === 2 ? 0.05 : 0;
     return `$${plan.price - plan.price * discount} al mes`;
-  }, [quoteId]);
+  }, [plan.price, quoteId]);
 
   return (
     <Card className="relative !pt-10 !px-8 !pb-12 h-full flex flex-col justify-between w-full max-w-[288px] lg:!pt-17">

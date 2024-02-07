@@ -4,8 +4,8 @@ import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Icon } from '@/elements/atoms';
-import { Plan } from '@/interfaces';
 import { CardPlan } from '@/elements/molecules';
+import { Plan } from '@/interfaces';
 
 import 'swiper/css';
 

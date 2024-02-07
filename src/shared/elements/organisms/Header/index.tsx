@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+
 import Image from 'next/image';
 
 import { Icon } from '@/elements/atoms';
 import { useScrollPosition } from '@/hooks';
+
 import { GridWrapper } from '../GridWrapper';
 
 export const Header = () => {

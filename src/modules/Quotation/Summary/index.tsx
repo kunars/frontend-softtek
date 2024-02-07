@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
 
+import { useGeneralContext } from '@/context';
 import { ButtonBack, Card, Icon } from '@/elements/atoms';
 import { GridWrapper } from '@/elements/organisms';
 import { Divider } from '@/elements/particles';
-import { useGeneralContext } from '@/context';
 
 type Props = {
   onPrevStep: () => void;
@@ -15,7 +15,7 @@ export const Summary = ({ onPrevStep }: Props) => {
   const getPrice = useMemo(() => {
     const discount = user.quoteId === 2 ? 0.05 : 0;
     return `$${plan.price - plan.price * discount} al mes`;
-  }, [user.quoteId]);
+  }, [plan.price, user.quoteId]);
 
   return (
     <GridWrapper className="py-8 lg:py-16">

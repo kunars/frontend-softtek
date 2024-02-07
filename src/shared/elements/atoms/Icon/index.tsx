@@ -1,15 +1,15 @@
-import Telephone from './Icons/gl_telephone.svg';
 import ArrowDown from './Icons/gl_arrow_down.svg';
-import AddUser from './Icons/ic_add_user.svg';
-import Check from './Icons/gl_check.svg';
 import ArrowLeft from './Icons/gl_arrow_left.svg';
-import Protection from './Icons/ic_protection.svg';
-import Home from './Icons/ic_home.svg';
-import Hospital from './Icons/ic_hospital.svg';
+import Check from './Icons/gl_check.svg';
+import Family from './Icons/gl_family.svg';
 import Left from './Icons/gl_left.svg';
 import Right from './Icons/gl_right.svg';
+import Telephone from './Icons/gl_telephone.svg';
+import AddUser from './Icons/ic_add_user.svg';
+import Home from './Icons/ic_home.svg';
+import Hospital from './Icons/ic_hospital.svg';
 import Loading from './Icons/ic_loading.svg';
-import Family from './Icons/gl_family.svg';
+import Protection from './Icons/ic_protection.svg';
 
 export const iconTypes = {
   gl_telephone: {

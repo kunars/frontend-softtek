@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
+
+import { DateTime } from 'luxon';
 import { Lato } from 'next/font/google';
 import { useRouter } from 'next/router';
 
-import { DateTime } from 'luxon';
-
+import { useGeneralContext } from '@/context';
 import { IconNames } from '@/elements/atoms';
 import { Stepper } from '@/elements/molecules';
+import { Plan } from '@/interfaces';
 import { PlansAndCoverages, Summary } from '@/modules/Quotation';
 import { usePlanService } from '@/services';
-import { useGeneralContext } from '@/context';
-import { Plan } from '@/interfaces';
 
 export const lato = Lato({
   subsets: ['latin'],

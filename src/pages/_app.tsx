@@ -1,8 +1,8 @@
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 
-import { Footer, Header } from '@/elements/organisms';
 import { GeneralProvider } from '@/context';
+import { Footer, Header } from '@/elements/organisms';
 
 import '../styles/index.scss';
 

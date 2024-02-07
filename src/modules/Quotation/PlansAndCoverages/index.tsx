@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
+
 import { useRouter } from 'next/router';
 
+import { QUOTE_LIST } from '@/constants';
+import { useGeneralContext } from '@/context';
 import { ButtonBack } from '@/elements/atoms';
 import { CardQuote } from '@/elements/molecules';
 import { GridWrapper } from '@/elements/organisms';
-import { QUOTE_LIST } from '@/constants';
 import { Plan } from '@/interfaces';
-import { useGeneralContext } from '@/context';
 
 import { PlansDesktop } from './PlansDesktop';
 import { PlansMobile } from './PlansMobile';
