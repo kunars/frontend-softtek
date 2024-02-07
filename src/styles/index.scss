@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./font";
+@import "./grid";
+@import "./form";
+@import "./button";
+@import "./icon";
+
+:root {
+  font-family: 'BRSonoma';
+}
+
+* {
+  @apply text-grey-100;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.text-default-neutral {
+  * {
+    @apply text-neutrals-700;
+  }
+}
+
+.bg-aqua {
+  @apply pointer-events-none absolute w-[345.6px] h-[870.4px] blur-[100px] block z-[1] inset-[-450px_-250px_0px_auto] lg:inset-[64px_-280px_0px_auto];
+  background: radial-gradient(farthest-side, #00F4E2 98%, transparent) 1px 12px/170px 170px,radial-gradient(farthest-side, #00F4E2 98%, transparent) -11px 92px/195px 195px,radial-gradient(farthest-side, #00F4E2 98%, transparent) 130px 177px/131px 131px,radial-gradient(farthest-side, #00F4E2 98%, transparent) 55px 168px/195px 195px,radial-gradient(farthest-side, #00F4E2 98%, transparent) 39px 258px/220px 220px,radial-gradient(farthest-side, #00F4E2 98%, transparent) 193px 362px/150px 150px;
+  background-repeat: no-repeat;
+}
+
+.bg-violet {
+  @apply pointer-events-none absolute w-[245.6px] h-[470.4px] blur-[100px] block z-[1] inset-[500px_auto_0px_-300px] lg:inset-[250px_auto_0px_-250px] lg:w-[345.6px] lg:h-[870.4px];
+  background: radial-gradient(farthest-side, #C333FF 98%, transparent) 1px 12px/170px 170px,radial-gradient(farthest-side, #C333FF 98%, transparent) -11px 92px/195px 195px,radial-gradient(farthest-side, #C333FF 98%, transparent) 130px 177px/131px 131px,radial-gradient(farthest-side, #C333FF 98%, transparent) 55px 168px/195px 195px,radial-gradient(farthest-side, #C333FF 98%, transparent) 39px 258px/220px 220px,radial-gradient(farthest-side, #C333FF 98%, transparent) 193px 362px/150px 150px;
+  background-repeat: no-repeat;
+}

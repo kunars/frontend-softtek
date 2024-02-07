@@ -1,0 +1,21 @@
+@layer utilities {
+  .button-md {
+    @apply h-12 py-[14px] px-8 text-button-03 rounded-full font-bold;
+  }
+
+  .button-lg {
+    @apply h-14 py-[18px] px-10 text-comp-18 rounded-full font-bold;
+  }
+
+  .button-xl {
+    @apply h-16 py-5 px-10 text-comp-20 rounded-full font-bold;
+  }
+}
+
+.button-primary {
+  @apply bg-red text-grey-0;
+}
+
+.button-secondary {
+  @apply bg-grey-100 text-grey-0 disabled:bg-[rgba(20,51,204,0.1)] disabled:text-disabled;
+}

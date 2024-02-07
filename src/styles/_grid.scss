@@ -1,0 +1,45 @@
+.content-grid {
+  @apply
+  h-full
+  grid  
+  grid-cols-4
+  gap-4
+  px-6
+  max-w-[1360px]
+  mx-auto
+  md:grid-cols-8
+  md:gap-6
+  lg:grid-cols-12
+  lg:gap-8
+  lg:px-30
+}
+
+@layer utilities {
+  .end-of-column {
+    @apply
+    ml-8
+    md:ml-12 
+    lg:ml-16 
+  }
+
+  .start-of-column {
+    @apply
+    mr-8
+    md:mr-12 
+    lg:mr-16 
+  }
+
+  .-end-of-column {
+    @apply
+    -ml-8
+    md:-ml-12 
+    lg:-ml-16 
+  }
+
+  .-start-of-column {
+    @apply
+    -mr-8
+    md:-mr-12 
+    lg:-mr-16 
+  }
+}

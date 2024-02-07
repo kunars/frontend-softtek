@@ -1,0 +1,22 @@
+.floating-input:focus {
+  outline:none;
+
+  ~ .floating-label{
+    @apply top-2 text-comp-12;
+  }
+}
+
+.floating-input:not(:placeholder-shown) ~ .floating-label,
+.floating-select:not([value=""]):valid ~ .floating-label,
+.floating-select[value=""]:focus ~ .floating-label {
+  @apply top-2 text-comp-12;
+}
+
+
+.form-group {
+  @apply relative;
+
+  .form-error {
+    @apply absolute mt-1 font-semibold text-red text-comp-14;
+  }
+}
