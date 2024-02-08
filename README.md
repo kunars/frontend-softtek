@@ -1,40 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prueba Frontend Softtek
 
-## Getting Started
+<br>
 
-First, run the development server:
+## Sobre el proyecto
+
+Esta proyecto es un prueba para la empresa Softtek, basado en el diseño Figma.
+
+## Documentación
+
+El Stack de desarrollo de la **Arquitectura Frontend** dentro de este proyecto es:
+
+* **Typescript** como lenguaje obligatorio de desarrollo.
+* **NextJS** como tecnología principal.
+* **Tailwind** como utility first para los estilos.
+* **SASS** como lenguaje para hojas de estilo
+* **Eslint** como linter de código.
+* **Prettier** como formateador de código.
+
+### Estructura de carpetas
+
+El proyecto cuenta con la siguiente estructura:
+
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+frontend-softtek
+ ├── .env #Variables de entorno
+ ├── .eslintignore #Ignorar El linter dentro de las carpetas dist y node_modules
+ ├── .eslintrc #Reglas del linter + Prettier
+ ├── .gitignore
+ ├── .prettierrc 
+ ├── next-env.d.ts 
+ ├── next.config.js #Configuración de NextJs
+ ├── package.json 
+ ├── postcss.config.js #Configuración de Postcss con Tailwind
+ ├─> public
+ │   └─> images
+ │   └─> svg
+ │   └─> fonts
+ ├── README.md #Documentación del proyecto
+ ├─> src
+ │   ├─> modules #Modulo de las diferentes páginas que contiene components pequeños
+ │   ├─> shared #Carpeta compartida  
+ │   │   └─> api #Configuración para las peticiones fetch
+ │   │   └─> constants #Constantes
+ │   │   └─> context #Context para manejar los estados globalmente
+ │   │   └─> elements #Components reutilizables basados en Atomic Design
+ │   │   └─> hooks #Custom hooks
+ │   │   └─> interfaces #Modelos de datos
+ │   │   └─> services #Peticiones HTTP para el consumo de datos
+ │   │   └─> utils #Utilitarios
+ │   ├─> pages #Carpeta de NextJS con las paginas existentes.
+ │   └─> styles #Estilos en SASS
+ ├── tailwind.config.js #Configuración de tailwind
+ └── tsconfig.json #Configuración de Typescript
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Correr localmente el proyecto
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Clonar el proyecto
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+  git clone https://github.com/kunars/frontend-softtek.git
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+2. Ir a la carpeta del proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+  cd frontend-softtek
+```
 
-## Learn More
+3. Instalar dependencias
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Iniciar el proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+  npm run dev
+```
