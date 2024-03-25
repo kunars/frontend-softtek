@@ -1,14 +1,15 @@
 import { useState } from 'react';
 
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { Controller, useForm } from 'react-hook-form';
 
 import { LIST_DOCUMENT_TYPE } from '@/constants';
+import { Controller, useForm } from 'react-hook-form';
 import { useGeneralContext } from '@/context';
 import { Input, Icon } from '@/elements/atoms';
 import { Checkbox, Dropdown, DropdownItem } from '@/elements/molecules';
 import { useAuthService } from '@/services';
+
+import { useRouter } from 'next/router';
 
 type FormProps = {
   documentType: string;
